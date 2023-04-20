@@ -15,20 +15,21 @@
   <title>Frontend Mentor | Stats preview card component</title>
 </head>
 <body>
-  <main class="min-h-screen bg-very-dark-blue">
+  <main class="min-h-screen bg-very-dark-blue flex flex-col justify-center items-center">
     <header class="fixed top-[-99rem] left-[-99rem]">
       <h1>Stats preview card component</h1>
     </header>
-    <article>
+    <article class="flex flex-col lg:flex-row-reverse w-[87.2%]">
       <picture class="block relative float-left before:content-[''] before:block
-                      before:absolute before:inset-0 before:bg-soft-violet/50 before:saturate-[5] before:brightness-[.25]"> 
+                      before:absolute before:inset-0 before:bg-soft-violet/50
+                      before:saturate-[5] before:brightness-[.25] w-full h-auto"> 
         <source srcset="../images/image-header-desktop.jpg"
                 media="(min-width: 900px)">
         <img src="../images/image-header-mobile.jpg"
              alt="People at a business meeting">
       </picture>
-      <div class="bg-dark-desaturated-blue">
-        <hgroup>
+      <div class="bg-dark-desaturated-blue flex flex-col">
+        <hgroup class="text-center">
           <h2 class="font-inter text-white">
             Get <em class="text-soft-violet">insights </em>
 	    that help your business grow.
@@ -38,10 +39,10 @@
             regarding revenue, customer experience, and overall efficiency.
           </p>
         </hgroup>
-        <ul>
-          <li class="font-lexend-deca text-white/[.65]">
+        <ul class="flex flex-col lg:flex-row">
+          <li class="font-lexend-deca text-white/[.65] text-center">
             <em class="font-inter text-white">10k+</em>
-            companies
+	    <p>companies</p>
           </li>
           <!-- Stat 2 -->
           <!-- Stat 3 -->
