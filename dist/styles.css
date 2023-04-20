@@ -576,6 +576,14 @@ video {
   justify-content: center;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .bg-dark-desaturated-blue {
   --tw-bg-opacity: 1;
   background-color: hsl(244 38% 16% / var(--tw-bg-opacity));
