@@ -598,6 +598,50 @@ video {
   font-family: 'Lexend Deca', sans-serif;
 }
 
+.text-\[0\.75rem\] {
+  font-size: 0.75rem;
+}
+
+.text-\[0\.9375rem\] {
+  font-size: 0.9375rem;
+}
+
+.text-\[1\.3rem\] {
+  font-size: 1.3rem;
+}
+
+.text-\[1\.75rem\] {
+  font-size: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.not-italic {
+  font-style: normal;
+}
+
+.leading-\[1\.15\] {
+  line-height: 1.15;
+}
+
+.leading-\[1\.7\] {
+  line-height: 1.7;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
 .text-soft-violet {
   --tw-text-opacity: 1;
   color: hsl(277 64% 61% / var(--tw-text-opacity));
