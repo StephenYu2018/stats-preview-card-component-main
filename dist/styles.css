@@ -580,10 +580,10 @@ video {
   justify-content: center;
 }
 
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+.space-y-\[1\.1rem\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  margin-top: calc(1.1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.1rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -641,8 +641,8 @@ video {
   font-size: 0.9375rem;
 }
 
-.text-\[1\.3rem\] {
-  font-size: 1.3rem;
+.text-\[1\.4rem\] {
+  font-size: 1.4rem;
 }
 
 .text-\[1\.75rem\] {
@@ -667,6 +667,10 @@ video {
 
 .leading-\[1\.15\] {
   line-height: 1.15;
+}
+
+.leading-\[1\.65\] {
+  line-height: 1.65;
 }
 
 .leading-\[1\.7\] {
