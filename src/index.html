@@ -15,37 +15,43 @@
   <title>Frontend Mentor | Stats preview card component</title>
 </head>
 <body>
-  <main class="min-h-screen h-[59.75rem] bg-very-dark-blue flex flex-col justify-center items-center">
+  <main class="min-h-screen h-[59.75rem] bg-very-dark-blue flex flex-col
+               justify-center items-center">
     <header class="fixed top-[-99rem] left-[-99rem]">
       <h1>Stats preview card component</h1>
     </header>
-    <article class="flex flex-col lg:flex-row-reverse w-[87.2%] rounded-lg
+    <article class="flex flex-col lg:flex-row-reverse
+                    w-[clamp(20.4375rem,_87.2%,_69.375rem)] rounded-lg
                     overflow-hidden">
-      <picture class="block relative float-left before:content-[''] before:block
-                      before:absolute before:inset-0 before:bg-soft-violet/50
-                      before:saturate-[5] before:brightness-[.25] w-full h-auto"> 
+      <picture class="block relative float-left before:content-['']
+                      before:block before:absolute before:inset-0
+                      before:bg-soft-violet/50 before:saturate-[5]
+                      before:brightness-[.25] lg:w-[33.75rem]"> 
         <source srcset="../images/image-header-desktop.jpg"
-                media="(min-width: 900px)">
+                media="(min-width: 1024px)" class="w-full h-auto">
         <img src="../images/image-header-mobile.jpg"
-             alt="People at a business meeting">
+             alt="People at a business meeting" class="w-full h-auto">
       </picture>
-      <div class="bg-dark-desaturated-blue flex flex-col">
-        <hgroup class="text-center px-7 pt-10 pb-9 space-y-[1.1rem]">
+      <div class="bg-dark-desaturated-blue flex flex-col lg:w-[35.625rem]
+                  lg:px-[4.625rem]">
+        <hgroup class="text-center lg:text-left px-7 lg:px-0 pt-10 pb-9
+                       lg:py-[4.5rem] space-y-[1.1rem] lg:space-y-[1.6rem]">
           <h2 class="font-inter font-bold text-white text-[1.75rem]
-                     leading-[1.15]">
+                     lg:text-[2.3rem] leading-[1.15] lg:leading-[1.2]">
             Get <em class="not-italic text-soft-violet">insights </em>
             that help your business grow.
           </h2>
           <p class="font-inter font-normal text-white/75 text-[0.9375rem]
-                    leading-[1.65]">
+                    leading-[1.65] lg:leading-[1.7] pr-8">
             Discover the benefits of data analytics and make better decisions
             regarding revenue, customer experience, and overall efficiency.
           </p>
         </hgroup>
         <ul class="flex flex-col lg:flex-row">
-          <li class="text-center leading-[1.7] pb-8">
+          <li class="text-center lg:text-left leading-[1.7] pb-8
+                     lg:pr-[3.4rem]">
             <em class="not-italic font-inter font-bold text-white
-                       text-[1.4rem]">10k+</em>
+                       text-[1.4rem] lg:text-[1.5rem]">10k+</em>
             <span class="block font-lexend-deca font-normal text-white/[.65]
                          text-[0.75rem] tracking-wider uppercase">
               companies</span>
