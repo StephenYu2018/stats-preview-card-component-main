@@ -15,8 +15,8 @@
   <title>Frontend Mentor | Stats preview card component</title>
 </head>
 <body>
-  <main class="min-h-screen h-[59.75rem] bg-very-dark-blue flex flex-col
-               justify-center items-center">
+  <main class="min-h-screen h-[59.75rem] lg:h-[50rem] bg-very-dark-blue flex
+               flex-col justify-center items-center">
     <header class="fixed top-[-99rem] left-[-99rem]">
       <h1>Stats preview card component</h1>
     </header>
@@ -26,46 +26,64 @@
       <picture class="block relative float-left before:content-['']
                       before:block before:absolute before:inset-0
                       before:bg-soft-violet/50 before:saturate-[5]
-                      before:brightness-[.25] lg:w-[33.75rem]"> 
+                      before:brightness-[.25] lg:w-[48.65%]"> 
         <source srcset="../images/image-header-desktop.jpg"
                 media="(min-width: 1024px)" class="w-full h-auto">
         <img src="../images/image-header-mobile.jpg"
              alt="People at a business meeting" class="w-full h-auto">
       </picture>
-      <div class="bg-dark-desaturated-blue flex flex-col lg:w-[35.625rem]
-                  lg:px-[4.625rem]">
+      <div class="bg-dark-desaturated-blue flex flex-col lg:w-[calc(100%_-_48.65%)]
+                  lg:px-[min(5vw,_4.625rem)]">
         <hgroup class="text-center lg:text-left px-7 lg:px-0 pt-10 pb-9
-                       lg:py-[4.5rem] space-y-[1.1rem] lg:space-y-[1.6rem]">
+                       lg:py-[min(5vw,_4.5rem)] space-y-[1.1rem]
+                       lg:space-y-[min(1.8vw,_1.6rem)]">
           <h2 class="font-inter font-bold text-white text-[1.75rem]
-                     lg:text-[2.3rem] leading-[1.15] lg:leading-[1.2]">
+                     lg:text-[clamp(1.75rem,_2.5vw,_2.3rem)]
+                     leading-[1.15] lg:leading-[1.2]">
             Get <em class="not-italic text-soft-violet">insights </em>
             that help your business grow.
           </h2>
           <p class="font-inter font-normal text-white/75 text-[0.9375rem]
-                    leading-[1.65] lg:leading-[1.7] pr-8">
+                    leading-[1.65] lg:leading-[1.7]
+                    lg:pr-[clamp(1rem,_100%,_2rem)]">
             Discover the benefits of data analytics and make better decisions
             regarding revenue, customer experience, and overall efficiency.
           </p>
         </hgroup>
-        <ul class="flex flex-col lg:flex-row">
+        <ul class="flex flex-col sm:flex-row sm:justify-evenly lg:flex-start">
           <li class="text-center lg:text-left leading-[1.7] pb-8
-                     lg:pr-[3.4rem]">
+                     lg:pr-[min(4.4vw,_4rem)]">
             <em class="not-italic font-inter font-bold text-white
-                       text-[1.4rem] lg:text-[1.5rem]">10k+</em>
+                       text-[1.4rem] lg:text-[clamp(1.4rem,_1.7vw,_1.5rem)]">
+              10k+</em>
             <span class="block font-lexend-deca font-normal text-white/[.65]
                          text-[0.75rem] tracking-wider lg:tracking-widest
                          uppercase">
               companies</span>
           </li>
-          <!-- Stat 2 -->
-          <!-- Stat 3 -->
+          <li class="text-center lg:text-left leading-[1.7] pb-8
+                     lg:pr-[min(4.4vw,_4rem)]">
+            <em class="not-italic font-inter font-bold text-white
+                       text-[1.4rem] lg:text-[clamp(1.4rem,_1.7vw,_1.5rem)]">
+              314</em>
+            <span class="block font-lexend-deca font-normal text-white/[.65]
+                         text-[0.75rem] tracking-wider lg:tracking-widest
+                         uppercase">
+              templates</span>
+          </li>
+          <li class="text-center lg:text-left leading-[1.7] pb-8
+                     lg:pr-[min(4.4vw,_4rem)]">
+            <em class="not-italic font-inter font-bold text-white
+                       text-[1.4rem] lg:text-[clamp(1.4rem,_1.7vw,_1.5rem)]">
+              12M+</em>
+            <span class="block font-lexend-deca font-normal text-white/[.65]
+                         text-[0.75rem] tracking-wider lg:tracking-widest
+                         uppercase">
+              queries</span>
+          </li>
         </ul>
       </div>
     </article>
   </main>
-
-  314 templates
-  12m+ queries
-
 </body>
 </html>

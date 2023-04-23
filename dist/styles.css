@@ -617,10 +617,6 @@ video {
   padding-bottom: 2.25rem;
 }
 
-.pr-8 {
-  padding-right: 2rem;
-}
-
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -740,27 +736,37 @@ video {
   content: var(--tw-content);
 }
 
-@media (min-width: 1024px) {
-  .lg\:w-\[33\.75rem\] {
-    width: 33.75rem;
-  }
-
-  .lg\:w-\[35\.625rem\] {
-    width: 35.625rem;
-  }
-
-  .lg\:flex-row {
+@media (min-width: 640px) {
+  .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:justify-evenly {
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:h-\[50rem\] {
+    height: 50rem;
+  }
+
+  .lg\:w-\[48\.65\%\] {
+    width: 48.65%;
+  }
+
+  .lg\:w-\[calc\(100\%_-_48\.65\%\)\] {
+    width: calc(100% - 48.65%);
   }
 
   .lg\:flex-row-reverse {
     flex-direction: row-reverse;
   }
 
-  .lg\:space-y-\[1\.6rem\] > :not([hidden]) ~ :not([hidden]) {
+  .lg\:space-y-\[min\(1\.8vw\2c _1\.6rem\)\] > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
-    margin-top: calc(1.6rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1.6rem * var(--tw-space-y-reverse));
+    margin-top: calc(min(1.8vw, 1.6rem) * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(min(1.8vw, 1.6rem) * var(--tw-space-y-reverse));
   }
 
   .lg\:px-0 {
@@ -768,30 +774,34 @@ video {
     padding-right: 0px;
   }
 
-  .lg\:px-\[4\.625rem\] {
-    padding-left: 4.625rem;
-    padding-right: 4.625rem;
+  .lg\:px-\[min\(5vw\2c _4\.625rem\)\] {
+    padding-left: min(5vw, 4.625rem);
+    padding-right: min(5vw, 4.625rem);
   }
 
-  .lg\:py-\[4\.5rem\] {
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
+  .lg\:py-\[min\(5vw\2c _4\.5rem\)\] {
+    padding-top: min(5vw, 4.5rem);
+    padding-bottom: min(5vw, 4.5rem);
   }
 
-  .lg\:pr-\[3\.4rem\] {
-    padding-right: 3.4rem;
+  .lg\:pr-\[clamp\(1rem\2c _100\%\2c _2rem\)\] {
+    padding-right: clamp(1rem, 100%, 2rem);
+  }
+
+  .lg\:pr-\[min\(4\.4vw\2c _4rem\)\] {
+    padding-right: min(4.4vw, 4rem);
   }
 
   .lg\:text-left {
     text-align: left;
   }
 
-  .lg\:text-\[1\.5rem\] {
-    font-size: 1.5rem;
+  .lg\:text-\[clamp\(1\.4rem\2c _1\.7vw\2c _1\.5rem\)\] {
+    font-size: clamp(1.4rem, 1.7vw, 1.5rem);
   }
 
-  .lg\:text-\[2\.3rem\] {
-    font-size: 2.3rem;
+  .lg\:text-\[clamp\(1\.75rem\2c _2\.5vw\2c _2\.3rem\)\] {
+    font-size: clamp(1.75rem, 2.5vw, 2.3rem);
   }
 
   .lg\:leading-\[1\.2\] {
