@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - [Solution]()
-- [Live site]()
+- [Live site](https://www.stephenyu2018.github.io/stats-preview-card-component-main/)
 
 ## My process
 
@@ -41,7 +41,7 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - Fluid layout
-- [TailwindCSS](https://tailwindcss.com/) - CSS Utility Framework
+- [TailwindCSS](https://www.tailwindcss.com/) - CSS Utility Framework
 
 ### What I learned
 
