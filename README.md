@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution]()
+- [Solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-fluid-layout-with-tailwindcss-4UEGIgCYnW/)
 - [Live site](https://www.stephenyu2018.github.io/stats-preview-card-component-main/)
 
 ## My process
