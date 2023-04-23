@@ -580,6 +580,12 @@ video {
   justify-content: center;
 }
 
+.space-y-7 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
+
 .space-y-\[1\.1rem\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -609,16 +615,13 @@ video {
   padding-right: 1.75rem;
 }
 
-.pb-8 {
-  padding-bottom: 2rem;
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-9 {
   padding-bottom: 2.25rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
 }
 
 .text-center {
@@ -744,6 +747,12 @@ video {
   .sm\:justify-evenly {
     justify-content: space-evenly;
   }
+
+  .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
 }
 
 @media (min-width: 1024px) {
@@ -779,17 +788,24 @@ video {
     padding-right: min(5vw, 4.625rem);
   }
 
-  .lg\:py-\[min\(5vw\2c _4\.5rem\)\] {
-    padding-top: min(5vw, 4.5rem);
-    padding-bottom: min(5vw, 4.5rem);
+  .lg\:pb-0 {
+    padding-bottom: 0px;
   }
 
-  .lg\:pr-\[clamp\(1rem\2c _100\%\2c _2rem\)\] {
-    padding-right: clamp(1rem, 100%, 2rem);
+  .lg\:pb-\[3\.75rem\] {
+    padding-bottom: 3.75rem;
+  }
+
+  .lg\:pr-\[clamp\(1rem\2c _100\%\2c _3rem\)\] {
+    padding-right: clamp(1rem, 100%, 3rem);
   }
 
   .lg\:pr-\[min\(4\.4vw\2c _4rem\)\] {
     padding-right: min(4.4vw, 4rem);
+  }
+
+  .lg\:pt-\[min\(5vw\2c _4\.5rem\)\] {
+    padding-top: min(5vw, 4.5rem);
   }
 
   .lg\:text-left {
